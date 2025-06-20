@@ -5,9 +5,13 @@ const server = http.createServer((req, res) => {
   const url = req.url
   // home page
   if (url === '/') {
+    // we're providing headers(metadata) about our response
     res.writeHead(200, { 'content-type': 'text/html' })
+    // we can pass this info, text, html directly to the res.end() but now we pass it to res.body
     res.write('<h1>home page</h1>')
+    // indicates that communication is over
     res.end()
+   
   }
   // about page
   else if (url === '/about') {
