@@ -6,3 +6,5 @@ function addValues() {
 }
 
 addValues()
+// when you import module you actually invoke it
+// example: require('./07-mind-grenade') ------- just invoked this function (addValues())
