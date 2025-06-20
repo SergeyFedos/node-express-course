@@ -27,3 +27,8 @@ readFile('./content/first.txt', 'utf8', (err, result) => {
   })
 })
 console.log('starting next task')
+// // start
+// starting next task
+// done with this task
+// since we have this async approach when user #1 comes in and gets this functionality node just offload this task and your app can  keep on serving other users.
+// alternatives are using promises as well as async await
